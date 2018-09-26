@@ -176,6 +176,125 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtNVxuYTI8LTVMXG5gYGAifQ== -->
+<pre class="r"><code>a&lt;-5
+a2&lt;-5L</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYVZlY3RvcjwtYyg1LDYsNylcbmEyVmVjdG9yPC1jKDVMLDZMLDdMKVxuYGBgIn0= -->
+<pre class="r"><code>aVector&lt;-c(5,6,7)
+a2Vector&lt;-c(5L,6L,7L)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjwtXCLkvaDlpb1cIlxuYGBgIn0= -->
+<pre class="r"><code>b&lt;-&quot;你好&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjE8LVwiJ+S9oOWlvSdcIlxuYGBgIn0= -->
+<pre class="r"><code>b1&lt;-&quot;'你好'&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjI8LSdcIuS9oOWlvVwiJ1xuYGBgIn0= -->
+<pre class="r"><code>b2&lt;-'&quot;你好&quot;'</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsFxuYGBgIn0= -->
+<pre class="r"><code>as.factor(student$出生地) -&gt; student$出生地</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoc3R1ZGVudCTlh7rnlJ/lnLApXG5gYGAifQ== -->
+<pre class="r"><code>table(student$出生地)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmFjdG9yKHN0dWRlbnQk6Lqr6auY57Sa6LedLFxuICAgICAgIGxldmVscz1jKFwiKDAsMTUwXVwiLFwiKDE1MCwxNTVdXCIsIFwiKDE1NSwxNjBdXCIsIFwiKDE2MCwxNjVdXCIgLFwiKDE2NSwxNzBdXCIsIFwiKDE3MCwxNzVdXCIgLFwiKDE3NSwxODBdXCIgLFwiKDE4MCwxODVdXCIsIFwiKDE4NSwyMDBdXCIpLFxuICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot51cbmBgYCJ9 -->
+<pre class="r"><code>factor(student$身高級距,
+       levels=c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;),
+       ordered=TRUE) -&gt; student$身高級距</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVpZ2h0TGV2ZWxzIDwtIGMoXCIoMCwxNTBdXCIsXCIoMTUwLDE1NV1cIiwgXCIoMTU1LDE2MF1cIiwgXCIoMTYwLDE2NV1cIiAsXCIoMTY1LDE3MF1cIiwgXCIoMTcwLDE3NV1cIiAsXCIoMTc1LDE4MF1cIiAsXCIoMTgwLDE4NV1cIiwgXCIoMTg1LDIwMF1cIilcbmZhY3RvcihzdHVkZW50JOi6q+mrmOe0mui3nSxcbiAgICAgICBsZXZlbHM9aGVpZ2h0TGV2ZWxzLFxuICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot51cbmBgYCJ9 -->
+<pre class="r"><code>heightLevels &lt;- c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;)
+factor(student$身高級距,
+       levels=heightLevels,
+       ordered=TRUE) -&gt; student$身高級距</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTE8LVwiMjAxNy0wMS0zMVwiXG5gYGAifQ== -->
+<pre class="r"><code>a1&lt;-&quot;2017-01-31&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQk5Ye655Sf5ZywKVxuYGBgIn0= -->
+<pre class="r"><code>levels(student$出生地)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYlZlY3RvcjwtYyhcIuS9oOWlvVwiLFwiSG93IGFyZSB5b3U/XCIpXG5gYGAifQ== -->
+<pre class="r"><code>bVector&lt;-c(&quot;你好&quot;,&quot;How are you?&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbnN0dWRlbnQgPC0gcmVhZF9jc3YoXCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdHBlbWFydGluL2NvdXJzZS0xMDctMS1wcm9ncmFtbWluZy1mb3ItZGF0YS1zY2llbmNlL21hc3Rlci9kYXRhL3N0dWRlbnQuY3N2XCIpXG5gYGAifQ== -->
+<pre class="r"><code>library(readr)
+student &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiYGN1cmxgIHBhY2thZ2Ugbm90IGluc3RhbGxlZCwgZmFsbGluZyBiYWNrIHRvIHVzaW5nIGB1cmwoKWBcblBhcnNlZCB3aXRoIGNvbHVtbiBzcGVjaWZpY2F0aW9uOlxuY29scyhcbiAg5YWl5a245bm0ID0gY29sX2NoYXJhY3RlcigpLFxuICDlh7rnlJ/lnLAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIOaAp+WIpSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAg6Lqr6auYID0gY29sX2RvdWJsZSgpXG4pXG4ifQ== -->
+<pre><code>`curl` package not installed, falling back to using `url()`
+Parsed with column specification:
+cols(
+  入學年 = col_character(),
+  出生地 = col_character(),
+  性別 = col_character(),
+  身高 = col_double()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkobWFncml0dHIpXG5zdHVkZW50ICU8PiUgbXV0YXRlKFxuICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSlcbmBgYCJ9 -->
+<pre class="r"><code>library(dplyr)
+library(magrittr)
+student %&lt;&gt;% mutate(
+  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Cmd+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
@@ -190,7 +309,7 @@ $(document).ready(function () {
 <p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiMjAxOC0wOS0yNiIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KcGxvdChjYXJzKQpgYGAKCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDbWQrT3B0aW9uK0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDbWQrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4gCgpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiMjAxOC0wOS0yNiIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQpgYGB7cn0KYTwtNQphMjwtNUwKYGBgCgpgYGB7cn0KYVZlY3RvcjwtYyg1LDYsNykKYTJWZWN0b3I8LWMoNUwsNkwsN0wpCmBgYAoKYGBge3J9CmI8LSLkvaDlpb0iCmBgYAoKYGBge3J9CmIxPC0iJ+S9oOWlvSciCmBgYAoKYGBge3J9CmIyPC0nIuS9oOWlvSInCmBgYAoKYGBge3J9CmFzLmZhY3RvcihzdHVkZW50JOWHuueUn+WcsCkgLT4gc3R1ZGVudCTlh7rnlJ/lnLAKYGBgCgpgYGB7cn0KdGFibGUoc3R1ZGVudCTlh7rnlJ/lnLApCmBgYAoKYGBge3J9CmZhY3RvcihzdHVkZW50JOi6q+mrmOe0mui3nSwKICAgICAgIGxldmVscz1jKCIoMCwxNTBdIiwiKDE1MCwxNTVdIiwgIigxNTUsMTYwXSIsICIoMTYwLDE2NV0iICwiKDE2NSwxNzBdIiwgIigxNzAsMTc1XSIgLCIoMTc1LDE4MF0iICwiKDE4MCwxODVdIiwgIigxODUsMjAwXSIpLAogICAgICAgb3JkZXJlZD1UUlVFKSAtPiBzdHVkZW50JOi6q+mrmOe0mui3nQpgYGAKCmBgYHtyfQpoZWlnaHRMZXZlbHMgPC0gYygiKDAsMTUwXSIsIigxNTAsMTU1XSIsICIoMTU1LDE2MF0iLCAiKDE2MCwxNjVdIiAsIigxNjUsMTcwXSIsICIoMTcwLDE3NV0iICwiKDE3NSwxODBdIiAsIigxODAsMTg1XSIsICIoMTg1LDIwMF0iKQpmYWN0b3Ioc3R1ZGVudCTouqvpq5jntJrot50sCiAgICAgICBsZXZlbHM9aGVpZ2h0TGV2ZWxzLAogICAgICAgb3JkZXJlZD1UUlVFKSAtPiBzdHVkZW50JOi6q+mrmOe0mui3nQpgYGAKCmBgYHtyfQphMTwtIjIwMTctMDEtMzEiCmBgYAoKYGBge3J9CgpgYGAKCmBgYHtyfQpsZXZlbHMoc3R1ZGVudCTlh7rnlJ/lnLApCmBgYAoKYGBge3J9CmJWZWN0b3I8LWMoIuS9oOWlvSIsIkhvdyBhcmUgeW91PyIpCmBgYAoKYGBge3J9CmxpYnJhcnkocmVhZHIpCnN0dWRlbnQgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3YiKQpsaWJyYXJ5KGRwbHlyKQpsaWJyYXJ5KG1hZ3JpdHRyKQpzdHVkZW50ICU8PiUgbXV0YXRlKAogIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKQpgYGAKClRoaXMgaXMgYW4gW1IgTWFya2Rvd25dKGh0dHA6Ly9ybWFya2Rvd24ucnN0dWRpby5jb20pIE5vdGVib29rLiBXaGVuIHlvdSBleGVjdXRlIGNvZGUgd2l0aGluIHRoZSBub3RlYm9vaywgdGhlIHJlc3VsdHMgYXBwZWFyIGJlbmVhdGggdGhlIGNvZGUuIAoKVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkNtZCtTaGlmdCtFbnRlciouIAoKYGBge3J9CnBsb3QoY2FycykKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ21kK09wdGlvbitJKi4KCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ21kK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuIAoKVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLgoK</div>
 
 
 
