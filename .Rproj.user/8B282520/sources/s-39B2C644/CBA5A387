@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537977186732.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2366162102",
+    "id" : "CBA5A387",
+    "lastKnownWriteTime" : 1537977263,
+    "last_content_update" : 1537977263028,
+    "path" : "~/Desktop/Rproject/2018-09-26.Rmd",
+    "project_path" : "2018-09-26.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "1,18",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
