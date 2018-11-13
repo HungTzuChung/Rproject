@@ -52,13 +52,40 @@ gsHW2ws$成績<-5+gsHW2ws$答對率*5
 ## 1.6
 答對4題的人，最常錯的問題是那兩題？請找出其題目代碼。(`min()`與`max()`可找出極小與極大值，而`which()`可找出符合設定條件的元素位置)
 ```{r ans16}
-which(gsHW2ws$答對率=="0.8")->fourWright
+# 計算每人答對題數
+gsHW2ws$答對題數 <- rowSums(gsHW2ws[,1:5],na.rm = TRUE)
+# 取出答對4題的子樣本
+sample4corrects<- gsHW2ws[(gsHW2ws$答對題數==4),1:5]
+# 計算子樣本的各題答對率
+colMeans(sample4corrects,na.rm = TRUE)->aa
+# 答對率最低的位置
+minLocation <- which(aa == min(aa))
+min1<-names(aa)[minLocation]
 
+# 答對率第二低
+aa<-aa[-minLocation]
+minLocation <- which(aa == min(aa))
+min2<-names(aa)[minLocation]
+min2
+# 答對率最低二題的題目代碼
+commonMistakes<-c(min1, min2)
+commonMistakes
 ```
 
 ## 1.7
 答對3題的人，有那幾題正確率低於5成？請找出其題目代碼。
 ```{r ans17}
+# 計算每人答對題數
+gsHW2ws$答對題數 <- rowSums(gsHW2ws[,1:5],na.rm = TRUE)
+# 取出答對4題的子樣本
+sample3corrects<- gsHW2ws[(gsHW2ws$答對題數==3),1:5]
+# 計算子樣本的各題答對率
+colMeans(sample3corrects,na.rm = TRUE)->aa
+aa
+# 答對率最低的位置
+lowLocation <- which(aa < 0.5 )
+# 答對率最低的題目代碼
+names(aa)[lowLocation]
 ```
 
 
@@ -94,7 +121,10 @@ allBankData%>%
     `定存利率-三個月-固定`<-as.numeric(`定存利率-三個月-固定`),
     `定存利率-一年期-固定`<-as.numeric(`定存利率-一年期-固定`)
   )
-
+allBankData$銀行 <- as.factor(allBankData$銀行)
+allBankData$`定存利率-三個月-固定` <- as.numeric(allBankData$`定存利率-三個月-固定`)
+allBankData$`定存利率-一年期-固定` <- as.numeric(allBankData$`定存利率-一年期-固定`)
+allBankData
 ```
 
 # 3 政府開放資料
