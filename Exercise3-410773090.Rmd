@@ -36,8 +36,8 @@ classData[classData$`公-10-06`=="有看公告",1]
 在「有看公告」的人裡，有多少比例在2018-10-17有commit-push記錄（即值為1）。
 
 ```{r ans13}
-a=classData$學號[(classData$`公-10-06`=="有看公告"&classData$`練2018-10-17-1`=="1")]
-b=classData$學號[(classData$`公-10-06`=="有看公告")]
+a=classData[classData$`公-10-06`=="有看公告"&classData$`練2018-10-17-1`=="1",1]
+b=classData[classData$`公-10-06`=="有看公告",1]
 x=length(a)
 y=length(b)
 x/y
@@ -67,7 +67,7 @@ hwData<-gs_read(gsLMSHabit,ws="作業上傳")
 資料的Timestamp為台灣時間，請將Timestamp變數設定成為Date/Time類型（即POSIXct)且時區是"Asia/Taipei"。（hint: `lubridate::mdy_hms()`）
 ```{r ans21}
 library(lubridate)
-mdy_hms(hwData$Timestamp)->hwData$Timestamp
+mdy_hms(hwData$Timestamp,tz="Asia/Taipei")->hwData$Timestamp
 ```
 
 ### 2.2
@@ -75,7 +75,7 @@ mdy_hms(hwData$Timestamp)->hwData$Timestamp
 
 ```{r ans22}
 library(lubridate)
-hwData$deadline <-ymd_hms("2018-10-24 00:00:00")
+deadline <-ymd_hms("2018-10-24 00:00:00")
 
 ```
 
@@ -83,9 +83,8 @@ hwData$deadline <-ymd_hms("2018-10-24 00:00:00")
 將`deadline`減去`hwData$Timestap`你會得到一個向量物件，其class為difftime。它的值為兩個Date/Time差了多少秒,但這並不容易理解。使用`difftime()`算出每個作業交件提早了多少**天**, 並存在`hwData$early`裡。
 
 ```{r ans23}
-as.POSIXct(hwData$deadline,tz="GMT")->hwData$deadline
-as.POSIXct(hwData$Timestamp,tz="GMT")->hwData$Timestamp
-hwData$early<-difftime(hwData$deadline,hwData$Timestamp,units = "days")
+
+hwData$early<-difftime(deadline,hwData$Timestamp,units = "days")
 ```
 
 ### 2.4
@@ -99,7 +98,8 @@ hwData$early<-round(hwData$early,digits=0)
 作業1（即作業代碼為"hw1"）準時交的人中，他們的提早天數分佈如何？請使用`table()`呈現。
 
 ```{r ans25}
-abc<-hwData$early[hwData$作業代碼=="hw1"]
-table(abc)
+hwData[(hwData$Timestamp<deadline & hwData$作業代碼=="hw1"),]->subData
+table(subData$early)
+
 ```
 

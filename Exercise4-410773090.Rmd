@@ -66,7 +66,6 @@ min1<-names(aa)[minLocation]
 aa<-aa[-minLocation]
 minLocation <- which(aa == min(aa))
 min2<-names(aa)[minLocation]
-min2
 # 答對率最低二題的題目代碼
 commonMistakes<-c(min1, min2)
 commonMistakes
@@ -117,14 +116,11 @@ allBankData$年月%>%
 ```{r ans22}
 allBankData%>%
   mutate(
-    銀行<-as.factor(銀行),
-    `定存利率-三個月-固定`<-as.numeric(`定存利率-三個月-固定`),
-    `定存利率-一年期-固定`<-as.numeric(`定存利率-一年期-固定`)
+    銀行=as.factor(銀行),
+    `定存利率-三個月-固定`=as.numeric(`定存利率-三個月-固定`),
+    `定存利率-一年期-固定`=as.numeric(`定存利率-一年期-固定`)
   )
-allBankData$銀行 <- as.factor(allBankData$銀行)
-allBankData$`定存利率-三個月-固定` <- as.numeric(allBankData$`定存利率-三個月-固定`)
-allBankData$`定存利率-一年期-固定` <- as.numeric(allBankData$`定存利率-一年期-固定`)
-allBankData
+
 ```
 
 # 3 政府開放資料
@@ -150,7 +146,7 @@ exData
 
 ```{r ans32}
 exData%>%
-  mutate_at(vars(contains("/USD")),funs(1/.)
+  mutate_at(vars(contains("USD/")),funs(1/.)
     
   )->exData
 exData
